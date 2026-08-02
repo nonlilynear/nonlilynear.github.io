@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets"
 import "./styles/global.css"
+import wordmark from "./assets/wordmark.svg"
 ---
 
 <html lang="en">
@@ -12,20 +14,12 @@ import "./styles/global.css"
     <title>Astro</title>
   </head>
   <body>
-    <h1 class="text-9xl font-extrabold">lily dot com</h1>
-    <div class="flex justify-center">
-      <iframe
-        src="https://giphy.com/embed/pKWCBvHevLcMU"
-        width="680"
-        height="960"
-        frameBorder="0"
-        class="giphy-embed"
-        allowFullScreen></iframe><p>
-        <a
-          href="https://giphy.com/stickers/explosion-powettv-powet-pKWCBvHevLcMU"
-          >via GIPHY</a
-        >
-      </p>
-    </div>
+    <Image
+      src={wordmark}
+      alt="wide-lettered wordmark anchored to the top of the page with rounded letters reading 'lily'"
+      class="w-1/2 ml-10"
+      priority
+    />
+    
   </body>
 </html>
