@@ -7,5 +7,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: "https://nonlilynear.github.io",
+  site: "https://lily.hyperbeam.sh",
 })
